@@ -1,0 +1,54 @@
+.blog {
+    padding: 2rem;
+    background-color: #f5f5f5;
+    min-height: 100vh;
+  }
+  
+  .blog-container {
+    max-width: 60%;
+    margin: 0 auto;
+  }
+  
+  .blog h1 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: #333;
+  }
+  
+  .blog-post {
+    background-color: #fff;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .blog-post h2 {
+    font-size: 1.8rem;
+    color: #000000;
+  }
+  
+  .blog-post p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+  }
+  
+  .read-more {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .read-more:hover {
+    color: #0056b3;
+  } 
+
+  .blog-post figure img {
+    width: 100%;            /* Make the image responsive within the figure */
+    height: auto;           /* Keep the aspect ratio */
+    display: block;         /* Remove any inline display issues */
+  }

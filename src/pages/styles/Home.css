@@ -1,0 +1,45 @@
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    background-color: #f5f5f5;
+    text-align: center;
+  }
+  
+  .home-content h1 {
+    font-size: 3rem;
+    color: #333;
+  }
+  
+  .home-content p {
+    font-size: 1.2rem;
+    color: #555;
+    margin: 1rem auto;
+    text-align: justify;
+    max-width: 800px;
+  }
+
+  .home-image {
+    width: 100%;
+    max-width: 300px; /* Adjust the max width to fit your layout */
+    height:fit-content;
+    margin: 1rem 0; /* Adds space above and below the image */
+    border-radius: 50%; /* Optional: Add rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Adds a slight shadow */
+  }
+  
+  .cta-button {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #0056b3;
+  }  
