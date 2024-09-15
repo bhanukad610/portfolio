@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/bhanukad610.github.io/portfolio/static/css/main.cef3a49e.css",
+    "main.js": "/bhanukad610.github.io/portfolio/static/js/main.558993bc.js",
+    "index.html": "/bhanukad610.github.io/portfolio/index.html",
+    "main.cef3a49e.css.map": "/bhanukad610.github.io/portfolio/static/css/main.cef3a49e.css.map",
+    "main.558993bc.js.map": "/bhanukad610.github.io/portfolio/static/js/main.558993bc.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cef3a49e.css",
+    "static/js/main.558993bc.js"
+  ]
+}

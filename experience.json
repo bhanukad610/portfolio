@@ -1,0 +1,38 @@
+{
+    "experience": [
+    {
+      "title": "Software Engineer II",
+      "company": "Calcey",
+      "location": "Colombo, Sri Lanka",
+      "date": "Jan 2024 - April 2024"
+    },
+    {
+      "title": "Software Engineer",
+      "company": "Calcey",
+      "location": "Colombo, Sri Lanka",
+      "date": "April 2022 - Dec 2024"
+    },
+    {
+      "title": "Software Engineer",
+      "company": "Enactor",
+      "location": "Colombo, Sri Lanka",
+      "date": "Feb 2021 - March 2022"
+    },
+    {
+        "title": "Intern - Technology",
+        "company": "Virtusa",
+        "location": "Colombo, Sri Lanka",
+        "date": "July 2019 - Dec 2019"
+    }
+  ],
+
+  "education" : [
+    {
+        "degree": "BSc.(Hons) in Engineering",
+        "major": "Computer Science and Engineering",
+        "institution": "University of Moratuwa",
+        "location": "Sri Lanka",
+        "date": "2017 - 2021"
+      }
+  ]
+}
