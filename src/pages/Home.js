@@ -8,7 +8,6 @@ const Home = () => {
         <div className="home-content">
           <h1>Hi! I'm Bhanuka</h1>
           <img src="images/home-image.jpg" alt="Portfolio showcase" className="home-image" /><br></br>
-
           <a href="/about" className="cta-button">
             Get to know more about me!
           </a>
