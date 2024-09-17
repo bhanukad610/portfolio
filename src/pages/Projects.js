@@ -6,7 +6,7 @@ const Projects = () => {
     const [projects, setProjects] = useState([]);
   
     useEffect(() => {
-      fetch('/projects.json')
+      fetch(`${process.env.PUBLIC_URL}/projects.json`)
         .then((response) => response.json())
         .then((data) => setProjects(data.projects))
         .catch((error) => console.error('Error loading projects:', error));
