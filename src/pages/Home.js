@@ -7,7 +7,7 @@ const Home = () => {
       <section className="home">
         <div className="home-content">
           <h1>Hi! I'm Bhanuka</h1>
-          <img src="images/home-image.jpg" alt="Portfolio showcase" className="home-image" /><br></br>
+          <img src={`${process.env.PUBLIC_URL}/images/image-name.jpg`} alt="Portfolio showcase" className="home-image" /><br></br>
           <a href="/about" className="cta-button">
             Get to know more about me!
           </a>

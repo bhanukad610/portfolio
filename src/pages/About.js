@@ -6,7 +6,7 @@ const About = () => {
 
   // Fetch content from JSON file
   useEffect(() => {
-    fetch('/aboutContent.json')
+    fetch(`${process.env.PUBLIC_URL}/aboutContent.json`)
       .then((response) => response.json())
       .then((data) => setContent(data.paragraphs))
       .catch((error) => console.error('Error loading content:', error));

@@ -6,7 +6,7 @@ const Resume = () => {
   const [education, setEducation] = useState([]);
 
   useEffect(() => {
-    fetch('/experience.json')
+    fetch(`${process.env.PUBLIC_URL}/experience.json`)
       .then((response) => response.json())
       .then((data) => {
         setExperience(data.experience);
