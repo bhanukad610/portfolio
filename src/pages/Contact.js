@@ -22,7 +22,7 @@ const Contact = () => {
 
       {/* Downloadable Resume */}
       <div className="resume-download">
-        <a href="/path-to-your-resume.pdf" download>
+        <a href={`${process.env.PUBLIC_URL}/docs/resume.pdf`} download>
           <button className="download-btn">Download Resume</button>
         </a>
       </div>
