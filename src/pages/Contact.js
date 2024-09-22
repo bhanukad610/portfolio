@@ -9,14 +9,11 @@ const Contact = () => {
       
       {/* Social Media Links */}
       <div className="social-links">
-        <a href="https://github.com/your-profile" target="_blank" rel="noopener noreferrer">
+        <a href="https://github.com/bhanukad610" target="_blank" rel="noopener noreferrer">
           <i className="fab fa-github"></i> GitHub
         </a>
         <a href="https://linkedin.com/in/bhanuka-dissanayake" target="_blank" rel="noopener noreferrer">
           <i className="fab fa-linkedin"></i> LinkedIn
-        </a>
-        <a href="https://twitter.com/your-profile" target="_blank" rel="noopener noreferrer">
-          <i className="fab fa-twitter"></i> Twitter
         </a>
       </div>
 
