@@ -20,10 +20,6 @@ return (
         {content.map((paragraph, index) => (
           <p key={index}>{paragraph}</p>
         ))}
-
-        <a href="/projects" className="cta-button">
-          Check My Projects
-        </a>
       </div>
     </section>
   );
