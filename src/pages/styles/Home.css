@@ -1,45 +1,86 @@
 .home {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 80vh;
-    background-color: #f5f5f5;
-    text-align: center;
-  }
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  background-color: #f5f5f5;
+  text-align: center;
+  flex-direction: column;
+}
+
+.home-content h1 {
+  font-size: 3rem;
+  color: #333;
+}
+
+.home-content p {
+  font-size: 1.2rem;
+  color: #555;
+  margin: 1rem auto;
+  text-align: justify;
+  max-width: 800px;
+}
+
+.home-image {
+  width: 100%;
+  max-width: 300px;
+  height: fit-content;
+  margin: 1rem 0;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #0056b3;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
   .home-content h1 {
-    font-size: 3rem;
-    color: #333;
+    font-size: 2rem;
   }
-  
+
   .home-content p {
-    font-size: 1.2rem;
-    color: #555;
-    margin: 1rem auto;
-    text-align: justify;
-    max-width: 800px;
+    font-size: 1rem; /* Decrease the font size to improve readability */
+    padding: 0 1rem; /* Add padding to give space on the sides */
   }
 
   .home-image {
-    width: 100%;
-    max-width: 300px; /* Adjust the max width to fit your layout */
-    height:fit-content;
-    margin: 1rem 0; /* Adds space above and below the image */
-    border-radius: 50%; /* Optional: Add rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Adds a slight shadow */
+    max-width: 200px; /* Reduce the max-width for smaller screens */
   }
-  
+
   .cta-button {
-    display: inline-block;
-    padding: 0.8rem 1.5rem;
-    background-color: #007bff;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 1.2rem;
-    transition: background-color 0.3s ease;
+    padding: 0.6rem 1rem; /* Reduce padding to fit better on small screens */
+    font-size: 1rem; /* Decrease the button font size */
   }
-  
-  .cta-button:hover {
-    background-color: #0056b3;
-  }  
+}
+
+@media (max-width: 480px) {
+  .home-content h1 {
+    font-size: 1.5rem; /* Further decrease font size on very small screens */
+  }
+
+  .home-content p {
+    font-size: 0.9rem; /* Further decrease text size */
+  }
+
+  .home-image {
+    max-width: 150px; /* Further reduce the size of the image */
+  }
+
+  .cta-button {
+    padding: 0.5rem 0.8rem; /* Further reduce padding */
+    font-size: 0.9rem; /* Further reduce font size */
+  }
+}

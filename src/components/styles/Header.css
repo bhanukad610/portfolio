@@ -1,23 +1,54 @@
 header {
-    background-color: #282c34;
-    padding: 1rem;
-    color: white;
+  background-color: #282c34;
+  padding: 1rem;
+  color: white;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap:initial; /* Allows items to wrap to the next line if needed */
+}
+
+nav ul li {
+  margin: 0 1rem;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  header {
+    text-align: center;
+    padding: 0.5rem;
   }
-  
+
   nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
+    flex-direction: column; /* Stack the navigation items vertically */
+    align-items: center;
   }
-  
+
   nav ul li {
-    margin: 0 1rem;
+    margin: 0.5rem 0;
   }
-  
+}
+
+@media (max-width: 480px) {
+  header {
+    padding: 0.5rem 0.2rem;
+  }
+
+  nav ul li {
+    margin: 0.3rem 0;
+  }
+
   nav ul li a {
-    color: white;
-    text-decoration: none;
+    font-size: 1rem;
   }
-  
+}
