@@ -8,6 +8,11 @@ on:
     branches:
       - main
 
+env:
+  AZURE_WEB_APP_NAME: bhanuka-dissanayake
+  AZURE_WEB_APP_PACKAGE_PATH: '.'
+  NODE_VERSION: '18.x'
+
 jobs:
   build:
     name: Build
@@ -20,7 +25,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '18'
+          node-version: ${{ env.NODE_VERSION }}
 
       - name: Install dependencies
         run: npm install
@@ -41,17 +46,21 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '18'
+          node-version: ${{ env.NODE_VERSION }}
 
       - name: Install dependencies
         run: npm install
 
-      - name: Build React App
+      - name: Build App
         run: npm run build
+
+      - name: Run Tests
+        run: npm run test --if-present
 
       - name: Deploy to Azure
         uses: azure/webapps-deploy@v2
         with:
-          app-name: "bhanuka-dissanayake"
+          app-name: ${{ env.AZURE_WEB_APP_NAME }}
+          package: ./build
           slot-name: "production"
           publish-profile: ${{ secrets.AZURE_PUBLISH_PROFILE }}
