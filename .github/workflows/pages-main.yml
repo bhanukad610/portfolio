@@ -9,7 +9,6 @@ on:
       - main
 
 env:
-  CI: false
   NODE_VERSION: '18.x'
 
 jobs:
