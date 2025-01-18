@@ -7,7 +7,7 @@ on:
     branches: [ "main" ]
 
 env:
-  NODE_VERSION: [18.x]
+  CI: false
 
 jobs:
   build:
@@ -25,7 +25,7 @@ jobs:
       deployments: 'write'
     strategy:
       matrix:
-        node-version: ${{ env.NODE_VERSION }}
+        node-version: [18.x]
 
     steps:
     - uses: actions/checkout@v3
