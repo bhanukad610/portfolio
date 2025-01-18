@@ -1,17 +1,16 @@
-name: CI
+name: CI/CD PipeLine for Github Pages
 
 on:
-  push:
-    branches: [ "main" ]
   pull_request:
-    branches: [ "main" ]
+    branches:
+      - main
 
 env:
   CI: false
+  NODE_VERSION: '18.x'
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
     environment:
       name: github-pages
@@ -26,8 +25,7 @@ jobs:
       deployments: 'write'
     strategy:
       matrix:
-        node-version: [18.x]
-        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
+        node-version: ${{ env.NODE_VERSION }}
 
     steps:
     - uses: actions/checkout@v3
@@ -37,7 +35,6 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
     - name: Install dependencies
-      # Using npm ci is generally faster than running npm i because it caches dependencies
       run: |
         npm ci
     - name: Build the app
@@ -49,7 +46,6 @@ jobs:
     - name: Upload artifact
       uses: actions/upload-pages-artifact@v1
       with:
-        # Upload build directory content
         path: 'build/'
     - name: Deploy to GitHub Pages
       id: deployment
