@@ -1,5 +1,17 @@
 {
-    "experience": [
+  "experience": [
+    {
+      "title": "Software Engineer",
+      "company": "Racing & Wagering Western Australia (RWWA)",
+      "location": "Perth, Western Australia",
+      "date": "April 2025 - present"
+    },
+    {
+      "title": "Software Engineer - Consultant",
+      "company": "Corzent",
+      "location": "Colombo, Sri Lanka",
+      "date": "Oct 2024 - April 2025"
+    },
     {
       "title": "Software Engineer II",
       "company": "Calcey",
@@ -19,20 +31,19 @@
       "date": "Feb 2021 - March 2022"
     },
     {
-        "title": "Intern - Technology",
-        "company": "Virtusa",
-        "location": "Colombo, Sri Lanka",
-        "date": "July 2019 - Dec 2019"
+      "title": "Intern - Technology",
+      "company": "Virtusa",
+      "location": "Colombo, Sri Lanka",
+      "date": "July 2019 - Dec 2019"
     }
   ],
-
-  "education" : [
+  "education": [
     {
-        "degree": "BSc.(Hons) in Engineering",
-        "major": "Computer Science and Engineering",
-        "institution": "University of Moratuwa",
-        "location": "Sri Lanka",
-        "date": "2017 - 2021"
-      }
+      "degree": "BSc.(Hons) in Engineering",
+      "major": "Computer Science and Engineering",
+      "institution": "University of Moratuwa",
+      "location": "Sri Lanka",
+      "date": "2017 - 2021"
+    }
   ]
 }

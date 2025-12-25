@@ -1,46 +1,133 @@
 {
-    "projects": [
-      {
-        "title": "Praisal",
-        "organization": "Calcey",
-        "description": "Initiated and executed the research, design, and development of Calcey Resource Management Portal version 1.0, facilitating the seamless allocation of human resources for the organization's resource management team based on project needs. Presently focused on transitioning this tool into a market-ready product, allowing customization for use by other companies.",
-        "technologies": ["C#", ".NET 6", "ASP.NET core Web API", "Entity Framework core", "LINQ", "Dapper", "PostgreSQL", "GitLab", "AWS EC2"]
-      },
-      {
-        "title": "Nelly.com",
-        "organization": "Calcey",
-        "description": "Nelly is one of the Nordic’s leading e-commerce platforms in fashion and accessories for Women. It owns and operates Nellyman.com for men as well. Nelly’s platform included mobile apps, a back office and internal software. It supported multiple countries and languages.",
-        "technologies": ["C#", ".NET Core", "Dapper", "MS SQL Server", "TypeScript", "Svelte", "GitHub"]
-      },
-      {
-        "title": "AiScout",
-        "organization": "Calcey",
-        "description": "aiScout is a comprehensive platform designed to help various sporting organizations, including professional football clubs, national squads, universities, private academies, and schools, engage, analyze, trial, rate, score, and develop amateur and signed players using just a mobile phone. The platform comprises a player app, scout app, and control centre, creating a fully connected ecosystem throughout the sporting organisation.",
-        "technologies": [".NET Core", "C#", "Mudblazor", "MSSQL", "Python", "AWS Lambda", "Redis", "GitLab"]
-      },
-      {
-        "title": "Stanford GSB eLearning platform",
-        "organization": "Calcey",
-        "description": "Worked as Full-Stack Developer on version upgrades of the Stanford Graduate School of Business eLearning platform which is used by 50 other business schools, nearly 800 global universities, Fortune 500 companies, government agencies, and the US military.",
-        "technologies": ["Django", "PostgreSQL", "Elasticsearch", "GitLab"]
-      },
-      {
-        "title": "Enactor",
-        "organization": "Enactor",
-        "description": "Enactor is a leading provider of next-generation retail store systems, offering advanced omnichannel Point of Sale (POS) solutions and innovative store solutions. With a strong global presence spanning 35 countries across Europe, APAC, North America, Latin America and Asia, Enactor powers over 800 million transactions annually, generating £20+ billion in revenue and supporting 50,000+ POS devices across the world.",
-        "technologies": ["Java", "Maven", "MySQL", "Enactor DevTools", "Subversion", "Jenkins", "Cucumber", "Docker", "Apache Zookeeper"]
-      },
-      {
-        "title": "SIBOS COLLATERAL",
-        "organization": "Virtusa",
-        "description": "SIBOS COLLATERAL is a key investment project by Virtusa, focusing on Robotic Process Automation (RPA) and Machine Learning (ML). In the first phase, the team automated the Name Screening process to identify blacklisted entities, such as individuals or locations, in transaction documents to detect and prevent fraud.",
-        "technologies": ["JAVA", "Maven", "Python", "Keras", "Tensorflow", "Flask", "MongoDB"]
-      },
-      {
-        "title": "DTS Insights",
-        "organization": "Virtusa",
-        "description": "DTS Insights is a microservices-based Enterprise Software Development Life cycle dashboarding and gamification platform. It sits on top of enterprise tools like Sonarqube, JIRA, and Git to make quality and produce actionable and engaging Developers, Testers, and Business analysts of the organization.",
-        "technologies": ["JAVA", "Spring Boot", "React", "MySQL", "Elasticsearch", "Jira", "GIT"]
-      }
-    ]
-  }  
+  "projects": [
+    {
+      "title": "Event 360",
+      "organization": "RWWA",
+      "description": "Worked on the modernisation of TBSAdmin, a core trading administration tool used to manage Fixed Odds racing meetings, by contributing to its successor platform Event360. TBSAdmin was originally inherited from BetEasy and is used by traders to manage race meetings, visualize live feeds from external providers (such as BetMakers), and manually control race states, pricing, runner details, and liability limits.\n\nEvent360 is the modern web-based replacement for TBSAdmin, redesigned using lightweight web technologies to provide a cleaner, faster, and more user-friendly trading experience while still leveraging the existing TBSAdmin backend APIs. I contributed to enhancing Event360 by implementing UI and usability improvements, new configuration screens, and feature parity with TBSAdmin to support the gradual decommissioning of the legacy platform.\n\nKey enhancements included introducing a 'Visited Races' history section, adding Refresh and Risk Admin quick actions, upgrading the Home Page calendar to support date-range filtering, integrating live race updates, and implementing several UI improvements such as popups, icons, and streamlined navigation to improve trader efficiency.",
+      "technologies": [
+        "HTMX",
+        "AlpineJs",
+        "Bootstrap",
+        "CSS",
+        "C#",
+        "ASP.NET MVC",
+        "Microsoft SQL Server",
+        "AWS",
+        "GitLab"
+      ]
+    },
+    {
+      "title": "Simpology Australia",
+      "organization": "Corzent",
+      "description": "Contributing to one of Australia's leading end-to-end loan origination platforms.Engaged in user requirement analysis and planning tasks and technical specifications. Contributed to sub-status alert tracking for loan applications to improve monitoring and notifications. Developed features for digital income verifications, ensuring up-to-date and accurate data.",
+      "technologies": [
+        "C#",
+        ".NET Core",
+        "Angular",
+        "Microsoft SQL Server",
+        "AWS",
+        "Bitbucket"
+      ]
+    },
+    {
+      "title": "Praisal",
+      "organization": "Calcey",
+      "description": "Initiated and executed the research, design, and development of Calcey Resource Management Portal version 1.0, facilitating the seamless allocation of human resources for the organization's resource management team based on project needs. Presently focused on transitioning this tool into a market-ready product, allowing customization for use by other companies.",
+      "technologies": [
+        "C#",
+        ".NET 6",
+        "ASP.NET core Web API",
+        "Entity Framework core",
+        "LINQ",
+        "Dapper",
+        "PostgreSQL",
+        "GitLab",
+        "AWS EC2"
+      ]
+    },
+    {
+      "title": "Nelly.com",
+      "organization": "Calcey",
+      "description": "Nelly is one of the Nordic’s leading e-commerce platforms in fashion and accessories for Women. It owns and operates Nellyman.com for men as well. Nelly’s platform included mobile apps, a back office and internal software. It supported multiple countries and languages.",
+      "technologies": [
+        "C#",
+        ".NET Core",
+        "Dapper",
+        "MS SQL Server",
+        "TypeScript",
+        "Svelte",
+        "GitHub"
+      ]
+    },
+    {
+      "title": "AiScout",
+      "organization": "Calcey",
+      "description": "aiScout is a comprehensive platform designed to help various sporting organizations, including professional football clubs, national squads, universities, private academies, and schools, engage, analyze, trial, rate, score, and develop amateur and signed players using just a mobile phone. The platform comprises a player app, scout app, and control centre, creating a fully connected ecosystem throughout the sporting organisation.",
+      "technologies": [
+        ".NET Core",
+        "C#",
+        "Mudblazor",
+        "MSSQL",
+        "Python",
+        "AWS Lambda",
+        "Redis",
+        "GitLab"
+      ]
+    },
+    {
+      "title": "Stanford GSB eLearning platform",
+      "organization": "Calcey",
+      "description": "Worked as Full-Stack Developer on version upgrades of the Stanford Graduate School of Business eLearning platform which is used by 50 other business schools, nearly 800 global universities, Fortune 500 companies, government agencies, and the US military.",
+      "technologies": [
+        "Django",
+        "PostgreSQL",
+        "Elasticsearch",
+        "GitLab"
+      ]
+    },
+    {
+      "title": "Enactor",
+      "organization": "Enactor",
+      "description": "Enactor is a leading provider of next-generation retail store systems, offering advanced omnichannel Point of Sale (POS) solutions and innovative store solutions. With a strong global presence spanning 35 countries across Europe, APAC, North America, Latin America and Asia, Enactor powers over 800 million transactions annually, generating £20+ billion in revenue and supporting 50,000+ POS devices across the world.",
+      "technologies": [
+        "Java",
+        "Maven",
+        "MySQL",
+        "Enactor DevTools",
+        "Subversion",
+        "Jenkins",
+        "Cucumber",
+        "Docker",
+        "Apache Zookeeper"
+      ]
+    },
+    {
+      "title": "SIBOS COLLATERAL",
+      "organization": "Virtusa",
+      "description": "SIBOS COLLATERAL is a key investment project by Virtusa, focusing on Robotic Process Automation (RPA) and Machine Learning (ML). In the first phase, the team automated the Name Screening process to identify blacklisted entities, such as individuals or locations, in transaction documents to detect and prevent fraud.",
+      "technologies": [
+        "JAVA",
+        "Maven",
+        "Python",
+        "Keras",
+        "Tensorflow",
+        "Flask",
+        "MongoDB"
+      ]
+    },
+    {
+      "title": "DTS Insights",
+      "organization": "Virtusa",
+      "description": "DTS Insights is a microservices-based Enterprise Software Development Life cycle dashboarding and gamification platform. It sits on top of enterprise tools like Sonarqube, JIRA, and Git to make quality and produce actionable and engaging Developers, Testers, and Business analysts of the organization.",
+      "technologies": [
+        "JAVA",
+        "Spring Boot",
+        "React",
+        "MySQL",
+        "Elasticsearch",
+        "Jira",
+        "GIT"
+      ]
+    }
+  ]
+}
