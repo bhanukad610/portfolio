@@ -1,6 +1,22 @@
 {
   "projects": [
     {
+      "title": "Event 360",
+      "organization": "RWWA",
+      "description": "Worked on the modernisation of TBSAdmin, a core trading administration tool used to manage Fixed Odds racing meetings, by contributing to its successor platform Event360. TBSAdmin was originally inherited from BetEasy and is used by traders to manage race meetings, visualize live feeds from external providers (such as BetMakers), and manually control race states, pricing, runner details, and liability limits.\n\nEvent360 is the modern web-based replacement for TBSAdmin, redesigned using lightweight web technologies to provide a cleaner, faster, and more user-friendly trading experience while still leveraging the existing TBSAdmin backend APIs. I contributed to enhancing Event360 by implementing UI and usability improvements, new configuration screens, and feature parity with TBSAdmin to support the gradual decommissioning of the legacy platform.\n\nKey enhancements included introducing a 'Visited Races' history section, adding Refresh and Risk Admin quick actions, upgrading the Home Page calendar to support date-range filtering, integrating live race updates, and implementing several UI improvements such as popups, icons, and streamlined navigation to improve trader efficiency.",
+      "technologies": [
+        "HTMX",
+        "AlpineJs",
+        "Bootstrap",
+        "CSS",
+        "C#",
+        "ASP.NET MVC",
+        "Microsoft SQL Server",
+        "AWS",
+        "GitLab"
+      ]
+    },
+    {
       "title": "Simpology Australia",
       "organization": "Corzent",
       "description": "Contributing to one of Australia's leading end-to-end loan origination platforms.Engaged in user requirement analysis and planning tasks and technical specifications. Contributed to sub-status alert tracking for loan applications to improve monitoring and notifications. Developed features for digital income verifications, ensuring up-to-date and accurate data.",
