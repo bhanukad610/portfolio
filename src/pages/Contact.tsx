@@ -1,4 +1,3 @@
-import React from 'react';
 import './styles/Contact.css';
 
 const Contact = () => {
@@ -19,7 +18,7 @@ const Contact = () => {
 
       {/* Downloadable Resume */}
       <div className="resume-download">
-        <a href={`${process.env.PUBLIC_URL}/docs/resume.pdf`} download>
+        <a href={`${import.meta.env.BASE_URL}docs/resume.pdf`} download>
           <button className="download-btn">Download Resume</button>
         </a>
       </div>

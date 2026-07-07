@@ -1,22 +1,23 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import './styles/Blog.css';
+import type { MediumPost, MediumRssResponse } from '../types';
 
 const Blog = () => {
-  const [posts, setPosts] = useState([]);
+  const [posts, setPosts] = useState<MediumPost[]>([]);
 
   // Fetch Medium RSS feed and convert it to JSON
   useEffect(() => {
     const mediumRSS = `https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@bhanukadissanayake`;
-    
+
     fetch(mediumRSS)
-      .then((response) => response.json())
+      .then((response) => response.json() as Promise<MediumRssResponse>)
       .then((data) => {
         setPosts(data.items);
       })
       .catch((error) => console.error('Error fetching Medium feed:', error));
   }, []);
 
-  const truncateDescription = (description, length) => {
+  const truncateDescription = (description: string, length: number): string => {
     return description.length > length 
       ? description.substring(0, length) + "..." 
       : description;
