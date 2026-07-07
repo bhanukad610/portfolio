@@ -15,6 +15,7 @@ Stories are ordered for delivery: project structure and package changes (US-001 
 - Static assets that must remain in `public/` (JSON data files, images, `docs/`) are still served as-is and fetched via `import.meta.env.BASE_URL` instead of `process.env.PUBLIC_URL`
 - All application source files (`src/**/*.js`) are converted to `.ts`/`.tsx`, with a `tsconfig.json` (`strict: true`) added; no CRA-only files (`reportWebVitals.js`, `setupTests.js`) remain in `src/`
 - `.gitignore` is updated to ignore Vite's `dist/` output instead of `build/`
+- The GitHub Pages CI/CD workflow (`.github/workflows/pages-main.yml`) uploads from `dist/` (Vite's output) instead of the old CRA `build/` path, and uses current Node/action versions so the pipeline builds and deploys without errors
 
 ---
 
