@@ -1,6 +1,8 @@
-import React from 'react';
+import type { Project as ProjectData } from '../types';
 
-const Project = ({ title, organization, description, technologies }) => {
+type ProjectProps = ProjectData;
+
+const Project = ({ title, organization, description, technologies }: ProjectProps) => {
   return (
     <div className="project">
       <h2>{title}</h2>

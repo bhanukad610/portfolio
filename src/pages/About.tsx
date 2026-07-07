@@ -1,13 +1,14 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import './styles/About.css'; // Styling file for the About page
+import type { AboutContent } from '../types';
 
 const About = () => {
-  const [content, setContent] = useState([]);
+  const [content, setContent] = useState<string[]>([]);
 
   // Fetch content from JSON file
   useEffect(() => {
-    fetch(`${process.env.PUBLIC_URL}/aboutContent.json`)
-      .then((response) => response.json())
+    fetch(`${import.meta.env.BASE_URL}aboutContent.json`)
+      .then((response) => response.json() as Promise<AboutContent>)
       .then((data) => setContent(data.paragraphs))
       .catch((error) => console.error('Error loading content:', error));
   }, []);

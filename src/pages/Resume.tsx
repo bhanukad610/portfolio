@@ -1,13 +1,14 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import './styles/Resume.css';
+import type { Experience, Education, ExperienceResponse } from '../types';
 
 const Resume = () => {
-  const [experience, setExperience] = useState([]);
-  const [education, setEducation] = useState([]);
+  const [experience, setExperience] = useState<Experience[]>([]);
+  const [education, setEducation] = useState<Education[]>([]);
 
   useEffect(() => {
-    fetch(`${process.env.PUBLIC_URL}/experience.json`)
-      .then((response) => response.json())
+    fetch(`${import.meta.env.BASE_URL}experience.json`)
+      .then((response) => response.json() as Promise<ExperienceResponse>)
       .then((data) => {
         setExperience(data.experience);
         setEducation(data.education);
@@ -26,7 +27,6 @@ const Resume = () => {
             <h3>{item.title} at {item.company}</h3>
             <p className="experience-location">{item.location}</p>
             <p className="experience-date">{item.date}</p>
-            <p className="experience-description">{item.description}</p>
           </div>
         ))}
       </div>

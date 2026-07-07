@@ -1,13 +1,14 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import Project from '../components/Project';
 import './styles/Projects.css';
+import type { Project as ProjectData, ProjectsResponse } from '../types';
 
 const Projects = () => {
-    const [projects, setProjects] = useState([]);
-  
+    const [projects, setProjects] = useState<ProjectData[]>([]);
+
     useEffect(() => {
-      fetch(`${process.env.PUBLIC_URL}/projects.json`)
-        .then((response) => response.json())
+      fetch(`${import.meta.env.BASE_URL}projects.json`)
+        .then((response) => response.json() as Promise<ProjectsResponse>)
         .then((data) => setProjects(data.projects))
         .catch((error) => console.error('Error loading projects:', error));
     }, []);
