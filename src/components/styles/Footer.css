@@ -1,9 +1,10 @@
 footer {
-    background-color: #282c34;
-    color: white;
+    background-color: var(--color-header-bg);
+    color: var(--color-header-text);
     padding: 1rem;
     text-align: center;
     position: fixed;
     bottom: 0;
     width: 100%;
-  }  
+    transition: background-color 0.2s ease;
+  }

@@ -23,7 +23,7 @@ const Home = () => {
         className="h-40 w-40 rounded-full object-cover shadow-lg sm:h-48 sm:w-48"
       />
 
-      <h1 className="text-3xl font-bold text-gray-900 sm:text-4xl md:text-5xl">
+      <h1 className="text-3xl font-bold text-gray-900 dark:text-gray-100 sm:text-4xl md:text-5xl">
         Bhanuka Dissanayake
       </h1>
 
@@ -35,7 +35,7 @@ const Home = () => {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -12 }}
             transition={{ duration: 0.4 }}
-            className="text-xl font-medium text-blue-600 sm:text-2xl"
+            className="text-xl font-medium text-blue-600 dark:text-blue-400 sm:text-2xl"
           >
             {ROLES[roleIndex]}
           </motion.p>
@@ -45,13 +45,13 @@ const Home = () => {
       <div className="flex flex-col gap-4 sm:flex-row">
         <Link
           to="/about"
-          className="rounded-lg bg-blue-600 px-6 py-3 text-lg font-medium text-white shadow transition-colors hover:bg-blue-700"
+          className="rounded-lg bg-blue-600 px-6 py-3 text-lg font-medium text-white shadow transition-colors hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600"
         >
           About Me
         </Link>
         <Link
           to="/projects"
-          className="rounded-lg border border-blue-600 px-6 py-3 text-lg font-medium text-blue-600 shadow transition-colors hover:bg-blue-50"
+          className="rounded-lg border border-blue-600 px-6 py-3 text-lg font-medium text-blue-600 shadow transition-colors hover:bg-blue-50 dark:border-blue-400 dark:text-blue-400 dark:hover:bg-blue-950/40"
         >
           View Projects
         </Link>

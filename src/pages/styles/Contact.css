@@ -26,7 +26,7 @@
 .social-links a {
   font-size: 1.5rem;
   text-decoration: none;
-  color: #333;
+  color: var(--color-text);
 }
 
 .social-links a:hover {
@@ -38,8 +38,8 @@
 }
 
 .download-btn {
-  background-color: #333;
-  color: white;
+  background-color: var(--color-header-bg);
+  color: var(--color-header-text);
   padding: 10px 20px;
   font-size: 1rem;
   border: none;
@@ -49,5 +49,5 @@
 }
 
 .download-btn:hover {
-  background-color: #555;
+  background-color: var(--color-accent-hover);
 }

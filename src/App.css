@@ -12,33 +12,33 @@ html, body {
 }
 
   header {
-    background-color: #282c34;
+    background-color: var(--color-header-bg);
     padding: 1rem;
-    color: white;
+    color: var(--color-header-text);
   }
-  
+
   nav ul {
     list-style: none;
     padding: 0;
   }
-  
+
   nav ul li {
     display: inline;
     margin: 0 1rem;
   }
-  
+
   nav ul li a {
-    color: white;
+    color: var(--color-header-text);
     text-decoration: none;
   }
-  
+
   main {
     flex-grow: 1; /* This allows the main content to grow */
   }
 
   footer {
-    background-color: #333;
-    color: white;
+    background-color: var(--color-header-bg);
+    color: var(--color-header-text);
     text-align: center;
     padding: 1rem;
     width: 100%;
