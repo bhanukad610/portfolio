@@ -29,6 +29,15 @@ nav ul li {
 nav ul li a {
   color: var(--color-header-text);
   text-decoration: none;
+  padding-bottom: 0.25rem;
+  border-bottom: 2px solid transparent;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+nav ul li a.active {
+  color: var(--color-accent);
+  border-bottom-color: var(--color-accent);
+  font-weight: 600;
 }
 
 /* Mobile Responsiveness */
