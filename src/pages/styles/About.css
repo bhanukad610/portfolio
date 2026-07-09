@@ -4,9 +4,10 @@
   align-items: flex-start; /* Align items to the top to allow scrolling if content overflows */
   height: auto; /* Set height to auto for better responsiveness */
   min-height: 80vh; /* Set a minimum height */
-  background-color: #f5f5f5;
+  background-color: var(--color-bg-alt);
   padding: 6rem 2rem 2rem; /* Add padding on top to prevent content from being covered by the header */
   overflow-y: auto;
+  transition: background-color 0.2s ease;
 }
 
 .about-content {
@@ -16,13 +17,13 @@
 
 .about-content h1 {
   font-size: 2.5rem;
-  color: #333;
+  color: var(--color-heading);
   margin-bottom: 1rem;
 }
 
 .about-content p {
   font-size: 1rem;
-  color: #555;
+  color: var(--color-text-secondary);
   margin: 1rem 0;
   line-height: 1.6;
   text-align: justify;
@@ -31,7 +32,7 @@
 .cta-button {
   display: inline-block;
   padding: 0.8rem 1.5rem;
-  background-color: #007bff;
+  background-color: var(--color-accent);
   color: white;
   text-decoration: none;
   border-radius: 5px;
@@ -41,7 +42,7 @@
 }
 
 .cta-button:hover {
-  background-color: #0056b3;
+  background-color: var(--color-accent-hover);
 }
 
 /* Mobile Responsiveness */

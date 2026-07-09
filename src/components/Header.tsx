@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import ThemeToggle from './ThemeToggle';
 import './styles/Header.css';
 
 const Header = () => {
@@ -13,6 +14,7 @@ const Header = () => {
           <li><Link to="/blog">Blog</Link></li>
           <li><Link to="/contact">Contact</Link></li>
         </ul>
+        <ThemeToggle />
       </nav>
     </header>
   );

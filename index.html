@@ -11,6 +11,16 @@
     <link rel="apple-touch-icon" href="images/home-image.jpg" />
     <link rel="manifest" href="manifest.json" />
     <title>Bhanuka Dissanayake</title>
+    <script>
+      (function () {
+        var stored = localStorage.getItem('theme');
+        var theme = stored === 'light' || stored === 'dark'
+          ? stored
+          : (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        document.documentElement.classList.toggle('dark', theme === 'dark');
+        document.documentElement.setAttribute('data-theme', theme);
+      })();
+    </script>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
