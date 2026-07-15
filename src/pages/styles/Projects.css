@@ -1,7 +1,6 @@
 .projects {
     padding: 2rem;
     background-color: var(--color-bg-alt);
-    min-height: 100vh;
     transition: background-color 0.2s ease;
   }
 

@@ -1,45 +1,9 @@
-.App {
+.app-shell {
   display: flex;
   flex-direction: column;
-  min-height: 100vh; /* Minimum height ensures the footer moves down if content is small */
+  min-height: 100vh; /* Short pages still push the footer to the bottom of the viewport */
 }
 
-html, body {
-  height: auto;
-  margin: 0;
-  padding: 0;
-  display: block;
+.app-main {
+  flex: 1; /* Long pages grow past the viewport and push the footer below naturally */
 }
-
-  header {
-    background-color: var(--color-header-bg);
-    padding: 1rem;
-    color: var(--color-header-text);
-  }
-
-  nav ul {
-    list-style: none;
-    padding: 0;
-  }
-
-  nav ul li {
-    display: inline;
-    margin: 0 1rem;
-  }
-
-  nav ul li a {
-    color: var(--color-header-text);
-    text-decoration: none;
-  }
-
-  main {
-    flex-grow: 1; /* This allows the main content to grow */
-  }
-
-  footer {
-    background-color: var(--color-header-bg);
-    color: var(--color-header-text);
-    text-align: center;
-    padding: 1rem;
-    width: 100%;
-  }
