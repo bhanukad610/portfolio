@@ -1,6 +1,19 @@
 {
   "projects": [
     {
+      "title": "Technical Activity Modelling and Automation (TAMA)",
+      "organization": "Redblocks Technologies",
+      "description": "TAMA (Technical Activity Modelling and Automation) is a workflow and business model design platform that lets teams create, review, and manage business models using BPMN standards, covering the full lifecycle from initial modelling through stakeholder review, revision, and approval. Once a model is finalized, TAMA can generate professional PDF reports and distribute them via email, alongside metadata, template, and stakeholder management tools that keep models consistent across the organisation.\n\nThe backend is a .NET Web API built with ASP.NET Core, following a layered Clean Architecture (API, Application, Domain, Infrastructure) with MediatR for CQRS and Entity Framework Core with SQL Server for persistence. Authentication is handled via Azure AD with JWT tokens and policy-based authorization, and the platform integrates with Azure services including Application Insights for telemetry, Microsoft Graph for email, and Azure DevOps pipelines for builds.\n\nI contributed several core features, including a revisioning system for the Skyline model — one of TAMA's most complex process models, structured as a deeply nested tree of streams and links — by flattening the tree into a serializable snapshot DTO that could be reliably stored and reconstructed. I also built a history log for tracking process model changes and user actions for audit and traceability, a PDF export feature for generating step-by-step user guides from workflow models using the Strategy pattern to support multiple front page templates, and a master data console for bulk-importing and managing user-to-model mappings from Excel.",
+      "technologies": [
+        "C#",
+        ".NET Core",
+        "MS SQL Server",
+        "Azure DevOps",
+        "Microsoft Azure",
+        "React"
+      ]
+    },
+    {
       "title": "Event 360",
       "organization": "RWWA",
       "description": "Worked on the modernisation of TBSAdmin, a core trading administration tool used to manage Fixed Odds racing meetings, by contributing to its successor platform Event360. TBSAdmin was originally inherited from BetEasy and is used by traders to manage race meetings, visualize live feeds from external providers (such as BetMakers), and manually control race states, pricing, runner details, and liability limits.\n\nEvent360 is the modern web-based replacement for TBSAdmin, redesigned using lightweight web technologies to provide a cleaner, faster, and more user-friendly trading experience while still leveraging the existing TBSAdmin backend APIs. I contributed to enhancing Event360 by implementing UI and usability improvements, new configuration screens, and feature parity with TBSAdmin to support the gradual decommissioning of the legacy platform.\n\nKey enhancements included introducing a 'Visited Races' history section, adding Refresh and Risk Admin quick actions, upgrading the Home Page calendar to support date-range filtering, integrating live race updates, and implementing several UI improvements such as popups, icons, and streamlined navigation to improve trader efficiency.",
