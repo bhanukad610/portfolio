@@ -2,38 +2,39 @@
 .contact {
   max-width: 800px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 1.25rem;
   text-align: center;
 }
 
 .contact h1 {
-  font-size: 2rem;
-  margin-bottom: 20px;
+  font-size: var(--font-size-h1);
+  color: var(--color-heading);
+  margin-bottom: 1.25rem;
 }
 
 .contact p {
-  font-size: 1.2rem;
-  margin-bottom: 20px;
+  font-size: var(--font-size-body);
+  margin-bottom: 1.25rem;
 }
 
 .social-links {
   display: flex;
   justify-content: center;
-  gap: 20px;
-  margin-bottom: 30px;
+  gap: 1.25rem;
+  margin-bottom: 1.875rem;
 }
 
 .social-links a {
   display: inline-flex;
   align-items: center;
-  gap: 8px;
+  gap: 0.5rem;
   font-size: 1.2rem;
   text-decoration: none;
   color: var(--color-text);
 }
 
 .social-links a:hover {
-  color: #0077b5; /* Customize hover effect (LinkedIn Blue, for example) */
+  color: var(--color-accent);
 }
 
 .social-icon {
@@ -55,16 +56,16 @@
 }
 
 .resume-download {
-  margin-top: 20px;
+  margin-top: 1.25rem;
 }
 
 .download-btn {
-  background-color: var(--color-header-bg);
-  color: var(--color-header-text);
-  padding: 10px 20px;
-  font-size: 1rem;
+  background-color: var(--color-accent);
+  color: white;
+  padding: 0.625rem 1.25rem;
+  font-size: var(--font-size-body);
   border: none;
-  border-radius: 5px;
+  border-radius: var(--radius-md);
   cursor: pointer;
   transition: background-color 0.3s;
 }
