@@ -110,22 +110,7 @@ Stories are ordered for delivery: project structure and package changes (US-001 
 
 ---
 
-## US-008 — Browse Projects in a Responsive Grid
-
-**As a** visitor exploring Bhanuka's work,  
-**I want to** see projects displayed in a grid layout,  
-**So that** I can scan multiple projects at once rather than scrolling through a long single column.
-
-**Acceptance Criteria:**
-- Projects are shown in a 3-column grid on desktop (≥1024px)
-- Grid collapses to 2 columns on tablet (768px–1023px) and 1 column on mobile (<768px)
-- Each card displays: project title, organisation, technology tags, and description
-- Cards have a hover state (subtle shadow lift or scale) indicating they are interactive
-- All 9 existing projects are rendered
-
----
-
-## US-009 — Footer Does Not Overlap Page Content
+## US-008 — Footer Does Not Overlap Page Content
 
 **As a** visitor reading any page,  
 **I want** the footer to sit below the page content rather than covering it,  
@@ -139,7 +124,7 @@ Stories are ordered for delivery: project structure and package changes (US-001 
 
 ---
 
-## US-010 — Working Social Icons on Contact Page
+## US-009 — Working Social Icons on Contact Page
 
 **As a** visitor on the Contact page,  
 **I want to** see recognisable GitHub and LinkedIn icons,  
@@ -153,7 +138,7 @@ Stories are ordered for delivery: project structure and package changes (US-001 
 
 ---
 
-## US-011 — Blog Posts Show Cover Images
+## US-010 — Blog Posts Show Cover Images
 
 **As a** visitor reading the Blog page,  
 **I want to** see a cover image for each Medium post,  
@@ -167,7 +152,7 @@ Stories are ordered for delivery: project structure and package changes (US-001 
 
 ---
 
-## US-012 — Consistent Visual Language Site-Wide
+## US-011 — Consistent Visual Language Site-Wide
 
 **As a** visitor browsing multiple pages,  
 **I want** the site to feel visually cohesive on every page,  
