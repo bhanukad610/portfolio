@@ -1,3 +1,4 @@
+import { FaEnvelope, FaGithub, FaLinkedin } from 'react-icons/fa';
 import './styles/Contact.css';
 
 const Contact = () => {
@@ -5,14 +6,17 @@ const Contact = () => {
     <section className="contact">
       <h1>Contact Me</h1>
       <p>You can connect with me via the following platforms or download my resume.</p>
-      
+
       {/* Social Media Links */}
       <div className="social-links">
         <a href="https://github.com/bhanukad610" target="_blank" rel="noopener noreferrer">
-          <i className="fab fa-github"></i> GitHub
+          <FaGithub className="social-icon" /> GitHub
         </a>
         <a href="https://linkedin.com/in/bhanuka-dissanayake" target="_blank" rel="noopener noreferrer">
-          <i className="fab fa-linkedin"></i> LinkedIn
+          <FaLinkedin className="social-icon" /> LinkedIn
+        </a>
+        <a href="mailto:bhanuka.m.dissanayake@gmail.com">
+          <FaEnvelope className="social-icon" /> Email
         </a>
       </div>
 

@@ -24,13 +24,34 @@
 }
 
 .social-links a {
-  font-size: 1.5rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1.2rem;
   text-decoration: none;
   color: var(--color-text);
 }
 
 .social-links a:hover {
   color: #0077b5; /* Customize hover effect (LinkedIn Blue, for example) */
+}
+
+.social-icon {
+  font-size: 1.5rem;
+}
+
+@media (max-width: 480px) {
+  .social-links {
+    gap: 12px;
+  }
+
+  .social-links a {
+    font-size: 1rem;
+  }
+
+  .social-icon {
+    font-size: 1.75rem;
+  }
 }
 
 .resume-download {

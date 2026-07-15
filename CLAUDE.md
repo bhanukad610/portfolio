@@ -36,3 +36,5 @@ This is a React 18 + TypeScript (strict) single-page application built with Vite
 **Deployment**: The `homepage` field in `package.json` is set to the GitHub Pages URL. `npm run deploy` runs the predeploy build then pushes to the `gh-pages` branch via the `gh-pages` package.
 
 **Dos**: Always create a new branch for a development.
+
+**Don'ts**: Do not run the dev server, build, or a browser to verify changes (no `npm run dev`/`preview`, no Playwright/chromium-cli, etc.). Only make code changes; leave verification to the user unless they explicitly ask for it.
