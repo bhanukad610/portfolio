@@ -5,7 +5,7 @@
   width: 2.25rem;
   height: 2.25rem;
   border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 999px;
+  border-radius: var(--radius-pill);
   background: transparent;
   color: var(--color-header-text);
   font-size: 1.1rem;
