@@ -54,3 +54,13 @@
     height: auto;           /* Keep the aspect ratio */
     display: block;         /* Remove any inline display issues */
   }
+
+  .blog-post-thumbnail {
+    width: 100%;
+    max-width: 100%;
+    height: 100px;
+    display: block;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+    object-fit: cover;
+  }

@@ -25,12 +25,25 @@ const Blog = () => {
 
   return (
     <section className="blog">
+      <h1>My Blog</h1>
       <div className="blog-container">
         {posts.map((post, index) => (
           <div key={index} className="blog-post">
+            {post.thumbnail && (
+              <img
+                src={post.thumbnail}
+                alt={post.title}
+                className="blog-post-thumbnail"
+                loading="lazy"
+                decoding="async"
+                onError={(e) => {
+                  e.currentTarget.style.display = 'none';
+                }}
+              />
+            )}
             <h2>{post.title}</h2>
-            <p dangerouslySetInnerHTML={{ 
-              __html: truncateDescription(post.description, 500) 
+            <p dangerouslySetInnerHTML={{
+              __html: truncateDescription(post.description, 500)
             }} />
             <a href={post.link} target="_blank" rel="noopener noreferrer" className="read-more">
               Read more
